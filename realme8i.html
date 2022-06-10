@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TRACKMATE</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.dribbble.com/users/437703/screenshots/3368417/march2.gif">
+    <link rel="stylesheet" href="realme8i.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="product-card">
+      <h1>Realme 8i</h1>
+      <p>50MP + 48MP + 48MP-camera, Flagship Qualcomm®️ Snapdragon™️ 888 processor
+    </p>
+      <div class="product-pic"><img src="https://image01.realme.net/general/20210903/1630653653669.png
+        "></div>
+      <br>
+      <div class="product-colors">
+        <span class="blue active" data-color="#7ed6df" data-pic="url(1.png)"></span>
+        <span class="green" data-color="#badc58" data-pic="url(2.png)"></span>
+        <span class="yellow" data-color="#f9ca24" data-pic="url(3.png)"></span>
+        <span class="rose" data-color="#ff7979" data-pic="url(4.png)"></span>
+      </div>
+      <div class="product-info">
+        <div class="product-price">Rs 13,999</div>
+        <a href="D:\Project\books webstie\books webstie\cart-js\cart-js\cart.html" class="product-button">Add to Cart</a>
+      </div>
+    </div>
+ 
+    <script>
+      $(".product-colors span").click(function(){
+        $(".product-colors span").removeClass("active");
+        $(this).addClass("active");
+        $("body").css("background",$(this).attr("data-color"));
+        $(".product-price").css("color",$(this).attr("data-color"));
+        $(".product-button").css("color",$(this).attr("data-color"));
+        $(".product-pic").css("background-image",$(this).attr("data-pic"));
+      });
+    </script>
+  </body>
+</html>
